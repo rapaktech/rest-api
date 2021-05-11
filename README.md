@@ -13,10 +13,10 @@ Three types of data can be added for each user: Their name, email address, and c
 Here's a brief of the routes and how they work.
 
 
-To READ all user, send a raw JSON GET request to locahost:3000.
+To READ all user, send a raw JSON GET request to locahost:3000 or https://stormy-fjord-86866.herokuapp.com/
 
 
-To CREATE a new user, send a raw JSON POST request to locahost:3000/users containing your user info in a JSON object like this:
+To CREATE a new user, send a raw JSON POST request to locahost:3000/users or https://stormy-fjord-86866.herokuapp.com/users containing your user info in a JSON object like this:
 
 {
     "name": "Name",
@@ -25,14 +25,14 @@ To CREATE a new user, send a raw JSON POST request to locahost:3000/users contai
 }
 
 
-To READ a single user, send a raw JSON GET request to locahost:3000/users containing your user name in a JSON object like this:
+To READ a single user, send a raw JSON GET request to locahost:3000/users or https://stormy-fjord-86866.herokuapp.com/users containing your user name in a JSON object like this:
 
 {
     "name": "Name"
 }
 
 
-To UPDATE a new user, send a raw JSON PUT request to locahost:3000/users containing your user info in a JSON object like this:
+To UPDATE a new user, send a raw JSON PUT request to locahost:3000/users or https://stormy-fjord-86866.herokuapp.com/users containing your user info in a JSON object like this:
 
 {
     "name": "Name",
@@ -42,7 +42,7 @@ To UPDATE a new user, send a raw JSON PUT request to locahost:3000/users contain
 
 
 
-To DELETE a single user, send a raw JSON DELETE request to locahost:3000/users containing your user name in a JSON object like this:
+To DELETE a single user, send a raw JSON DELETE request to locahost:3000/users or https://stormy-fjord-86866.herokuapp.com/users containing your user name in a JSON object like this:
 
 {
     "name": "Name"
