@@ -6,7 +6,7 @@ const port = process.env.PORT;
 
 const { MongoClient } = require('mongodb');
 
-const connectionString = process.env.MONGODB_URI;
+const connectionString = process.env.MONGODB_URL;
 
 const client = new MongoClient(connectionString, {
     useNewUrlParser: true,
