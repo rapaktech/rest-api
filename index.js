@@ -6,7 +6,7 @@ const port = 3000;
 
 const { MongoClient } = require('mongodb');
 
-const connectionString = "mongodb://localhost:27017/restapi";
+const connectionString = process.env.MONGODB_URI;
 
 const client = new MongoClient(connectionString, {
     useNewUrlParser: true,
@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 // Fetching all users
-app.get('/users', (req, res) => {
+app.get('/', (req, res) => {
     client.connect((err, connectedClient) => {
         if (err) return res.status(500).json({ message: err });
         const db = connectedClient.db();
@@ -53,7 +53,7 @@ app.post('/users', (req, res) => {
 
 
 // fetch a single user
-app.get('/users/user', (req, res) => {
+app.get('/users', (req, res) => {
     client.connect((err, connectedClient) => {
         if (err) return res.status(500).json({ message: err });
         const db = connectedClient.db();
