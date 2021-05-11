@@ -6,7 +6,7 @@ const port = 3000;
 
 const { MongoClient } = require('mongodb');
 
-const connectionString = process.env.MONGODB_URI;
+const connectionString = "mongodb://localhost:27017/restapi";
 
 const client = new MongoClient(connectionString, {
     useNewUrlParser: true,

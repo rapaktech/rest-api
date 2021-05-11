@@ -12,6 +12,7 @@ Three types of data can be added for each user: Their name, email address, and c
 
 Here's a brief of the routes and how they work.
 
+To READ all user, send a raw JSON GET request to locahost:3000.
 
 To CREATE a new user, send a raw JSON POST request to locahost:3000/users containing your user info in a JSON object like this:
 
@@ -22,14 +23,11 @@ To CREATE a new user, send a raw JSON POST request to locahost:3000/users contai
 }
 
 
-To READ a single user, send a raw JSON GET request to locahost:3000/users/user containing your user name in a JSON object like this:
+To READ a single user, send a raw JSON GET request to locahost:3000/users containing your user name in a JSON object like this:
 
 {
     "name": "Name"
 }
-
-
-To READ all user, send a raw JSON GET request to locahost:3000/users.
 
 
 
